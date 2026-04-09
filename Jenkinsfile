@@ -5,7 +5,6 @@ pipeline {
         stage('Clone') {
             steps {
                 git url: 'https://github.com/Ariaryy/test-junit', branch: 'main'
-                bat "mvn clean package"
             }
         }
             
